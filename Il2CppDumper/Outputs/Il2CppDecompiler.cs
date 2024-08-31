@@ -59,6 +59,7 @@ namespace Il2CppDumper
                                 extends.Add(executor.GetTypeName(@interface, false, false));
                             }
                         }
+                        writer.Write($"\n// Image: {imageName}");
                         writer.Write($"\n// Namespace: {metadata.GetStringFromIndex(typeDef.namespaceIndex)}\n");
                         if (config.DumpAttribute)
                         {
